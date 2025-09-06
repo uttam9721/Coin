@@ -1,0 +1,28 @@
+
+
+.register{
+    width: 600px;
+    margin: auto;
+    margin-top: 100px;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 300px;
+    height: 300px;
+    /* gap: 20px; */
+}
+.formm input{
+    padding: 5px;
+    margin: 10px;
+    justify-content: center;
+}
+.btnn button{
+    /* display: flex; */
+    width: 150px;
+    font-size: bold;
+    
+    align-items: center;
+    justify-content: center;
+}

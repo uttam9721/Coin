@@ -4,6 +4,7 @@ import './Navbar.css'
 import logo from '../../assets/logo.png'
 import arrow from '../../assets/arrow_icon.png'
 import { CoinContext } from '../../context/CoinContext'
+import { Link } from 'react-router-dom'
 const Navbar = () => {
   const {setCurrency}=useContext(CoinContext)
 
@@ -14,11 +15,11 @@ const Navbar = () => {
         break;
       }
       case "eur":{
-        setCurrency({name:"eur",Symbol:"e"})
+        setCurrency({name:"eur",Symbol:"€"})
         break;
       }
       case "inr":{
-        setCurrency({name:"inr",Symbol:"R"})
+        setCurrency({name:"inr",Symbol:"₹"})
         break;
       }
       default:{
@@ -43,7 +44,7 @@ const Navbar = () => {
             <option value="eur">EUR</option>
             <option value="inr">INR</option>
         </select>
-        <button>Sign up <img src={arrow} alt="arrow" /> </button>
+       <Link to={'/register'}> <button>Sign up <img src={arrow} alt="arrow" /> </button> </Link>
       </div>
     </div>
   )

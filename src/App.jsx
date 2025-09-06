@@ -5,6 +5,7 @@ import {Routes ,Route} from 'react-router-dom'
 import Home from './pages/Home/Home';
 import Coin from './pages/Coin/Coin';
 import Footer from './components/Footer/Footer';
+import Register from './pages/Register/Register';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
 
       <Navbar />
       <Routes>
+        <Route path='/register' element={<Register/>} />
         <Route path='/' element={<Home/>} />
         <Route path='/coin/:id' element={<Coin/>} />
       </Routes>
