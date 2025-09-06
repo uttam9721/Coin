@@ -18,7 +18,6 @@ const Coin = () => {
   const [coinData, setCoinData] = useState(null);
   const [historicalData, setHistoricalData] = useState([]);
 
-  // Fetch coin details
   const fetchCoinData = async () => {
     try {
       const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency.name}&order=market_cap_desc&per_page=50&page=1&sparkline=false`;
@@ -31,14 +30,14 @@ const Coin = () => {
     }
   };
 
-  // Fetch historical data (7 days)
   const fetchHistoricalData = async () => {
     try {
       const url = `https://api.coingecko.com/api/v3/coins/${id}/market_chart?vs_currency=${currency.name}&days=7`;
       const response = await fetch(url);
       const data = await response.json();
+      console.log(data);
+      
 
-      // Format data for Recharts
       const formattedData = data.prices.map((item) => ({
         time: new Date(item[0]).toLocaleDateString("en-US", {
           month: "short",
@@ -85,7 +84,6 @@ const Coin = () => {
             </p>
           </div>
 
-          {/* ✅ Line Chart */}
           <h2 className="chart-title">Last 7 Days Price</h2>
           <ResponsiveContainer width="100%" height={300}>
             <LineChart data={historicalData}>

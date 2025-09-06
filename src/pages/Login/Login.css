@@ -1,5 +1,5 @@
 /* Full page background */
-.register {
+.login {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +8,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Form card */
+/* Reuse form styling */
 .formm {
   background: #1a0944;
   padding: 35px 40px;
@@ -59,7 +59,7 @@
   box-shadow: 0px 0px 6px rgba(138, 78, 255, 0.6);
 }
 
-/* Button + Login Link */
+/* Button + Register Link */
 .btnn {
   display: flex;
   flex-direction: column;
@@ -83,23 +83,20 @@
   background: #5e35b1;
 }
 
-/* Login text link */
-.login-link {
+/* Register text link */
+.register-link {
   margin-top: 12px;
   font-size: 14px;
   color: #ccc;
   text-align: center;
 }
 
-.login-link span {
+.register-link span {
   color: #8a4eff;
   cursor: pointer;
   transition: color 0.3s;
 }
 
-.login-link span:hover {
+.register-link span:hover {
   color: #c792ea;
-}
-.link{
-    color: blueviolet;
 }
