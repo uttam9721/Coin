@@ -21,6 +21,9 @@
     align-items: center;
     gap: max(1vw,12px);
 }
+.nav-right select{
+    cursor: pointer;
+}
 .navbar select{
     padding: 5px ,8px;
     border-radius: 6px;
