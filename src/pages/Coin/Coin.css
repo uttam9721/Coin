@@ -1,0 +1,123 @@
+.coin {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  background: #1a0841;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.coin h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.coin-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #2c115c, #1a0841);
+  box-shadow: inset 2px 2px 6px rgba(255, 255, 255, 0.05),
+              inset -2px -2px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.coin-name:hover {
+  transform: scale(1.02);
+}
+
+/* Coin image */
+.coin-name img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid #3a1c6b;
+  background: #0f022b;
+  transition: transform 0.3s ease;
+}
+
+.coin-name img:hover {
+  transform: scale(1.1);
+}
+
+/* Coin name */
+.coin-name h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+/* Info text */
+.coin-name p {
+  font-size: 1rem;
+  margin: 8px 0;
+  color: #cccccc;
+}
+
+/* Highlight price */
+.coin-name p:nth-child(3) {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00ffb3;
+}
+
+/* Market cap */
+.coin-name p:nth-child(4) {
+  font-weight: 500;
+  color: #bbbbbb;
+}
+
+/* Price change color */
+.coin-name p:nth-child(5) {
+  font-weight: 600;
+}
+
+.coin-name p:nth-child(5).positive {
+  color: #27ae60; /* green */
+}
+
+.coin-name p:nth-child(5).negative {
+  color: #e74c3c; /* red */
+}
+
+/* Loading text */
+.coin p {
+  font-size: 1.1rem;
+  color: #aaa;
+  margin-top: 20px;
+}
+
+/* Chart title */
+.chart-title {
+  margin: 30px 0 15px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .coin {
+    padding: 20px;
+  }
+  .coin-name img {
+    width: 90px;
+    height: 90px;
+  }
+  .coin h1 {
+    font-size: 1.6rem;
+  }
+  .coin-name h2 {
+    font-size: 1.2rem;
+  }
+}
