@@ -1,0 +1,132 @@
+.home {
+  padding: 0;
+  padding-bottom: 100px;
+}
+
+/* Hero Section */
+.hero {
+  max-width: 600px;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+
+.hero h1 {
+  font-size: max(4vw, 36px);
+  font-weight: bold;
+  color: white;
+}
+
+.hero p {
+  width: 75%;
+  margin: 0 auto;
+  color: #e3e3e3;
+  line-height: 1.5;
+}
+
+.hero form {
+  padding: 8px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero input {
+  flex: 1;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+}
+
+.hero button {
+  border: none;
+  background: #7929ff;
+  color: white;
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero button:hover {
+  background: #5d1fcc;
+}
+
+/* Crypto Table */
+.crypto-table {
+  max-width: 900px;
+  margin: 50px auto;
+  background: linear-gradient(rgba(84, 3, 255, 0.15), rgba(105, 2, 153, 0.15));
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+/* Table Layout */
+.table-layout {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1.5fr 1.5fr;
+  padding: 15px 20px;
+  align-items: center;
+  border-bottom: 1px solid #3c3c3c;
+    cursor: pointer;
+}
+
+.table-layout p {
+  margin: 0;
+}
+
+.table-layout div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.table-layout img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+/* Align Market Cap */
+.market-cap {
+  text-align: right;
+}
+.table-layout .green{
+  color: #00D515;
+  text-align: center;
+}
+.table-layout .red{
+  color: #ff4646;
+  text-align: center;
+}
+@media (max-width:768px){
+  .table-layout{
+    grid-template-columns:0.5fr 3fr 1fr 1fr;
+  }
+  .market-cap{
+    display: none;
+  }
+}
+@media (max-width:500px){
+  .table-layout div img{
+    width: 25px;
+  }
+  .table-layout{
+    font-size: 13px;
+  }
+  .hero form input{
+    width: 100px;
+  }
+}
