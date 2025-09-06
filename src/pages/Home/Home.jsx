@@ -35,7 +35,7 @@ const Home = () => {
           explore more about cryptos.
         </p>
 
-        <form onSubmit={searchHandler}>
+        <form onChange={searchHandler}>
           <input
             onChange={inputHandler}
             value={input}
